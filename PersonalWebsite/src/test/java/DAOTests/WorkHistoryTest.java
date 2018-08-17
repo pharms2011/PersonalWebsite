@@ -18,7 +18,7 @@ public class WorkHistoryTest {
 		workHistoryDAO.saveWorkHistory(wh);
 	}
 	
-	@Test
+	//@Test
 	public void getWorkHistory() {
 		WorkHistory wh = workHistoryDAO.getWorkHistoryById(1000);
 		System.out.println(wh);
