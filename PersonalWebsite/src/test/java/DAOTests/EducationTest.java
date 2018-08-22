@@ -11,7 +11,7 @@ public class EducationTest {
 	
 	public EducationDAOImpl educationDAO = new EducationDAOImpl();
 	
-	@Test
+	//@Test
 	public void saveTest() {
 		Education education = new Education(0,"University of Northern Colorado","Mathematics","August","May","2015","2013");
 		educationDAO.saveEducation(education);
