@@ -14,9 +14,9 @@ public class Education {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Education(int id, String school, String major, String startMonth, String endMonth, String startYear, String endYear) {
+	public Education(int educationId, String school, String major, String startMonth, String endMonth, String startYear, String endYear) {
 		super();
-		this.id = id;
+		this.educationId = educationId;
 		this.school = school;
 		this.major = major;
 		this.startMonth = startMonth;
@@ -27,7 +27,7 @@ public class Education {
 
 	@Id
 	@Column(name = "EDUCATION_ID")
-	private int id;
+	private int educationId;
 	
 	@Column(name = "SCHOOL")
 	private String school;
@@ -48,11 +48,11 @@ public class Education {
 	private String endYear;
 
 	public int getId() {
-		return id;
+		return educationId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setId(int educationId) {
+		this.educationId = educationId;
 	}
 
 	public String getMajor() {

@@ -37,7 +37,7 @@ public class EducationController {
 		}
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("get/{id}")
 	@ResponseBody
 	public ResponseEntity<Education> getEducationById(@PathVariable int id){
 		Education education = (Education) educationService.getEducationById(id);
