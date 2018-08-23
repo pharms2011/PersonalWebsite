@@ -21,7 +21,7 @@ import com.inertia.services.EducationServiceImpl;
 
 @RequestMapping("/education")
 @Controller("educationController")
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://localhost:4200")
 public class EducationController {
 	
 	@Autowired
