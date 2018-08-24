@@ -21,7 +21,7 @@ import com.inertia.services.WorkHistoryServiceImpl;
 
 @RequestMapping("/workHistory")
 @Controller("workHistoryController")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 public class WorkHistoryController {
 
 	@Autowired
