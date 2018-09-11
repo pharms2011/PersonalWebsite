@@ -1,10 +1,16 @@
-
-<mgl-timeline>
+<div class="timeline light">
     <div *ngFor = "let history of workHistorys">
-            <mgl-timeline-entry>
-                    <mgl-timeline-entry-header class="sub-title">{{history.title}}</mgl-timeline-entry-header>
-                    <mgl-timeline-entry-content class="description">{{history.description}}</mgl-timeline-entry-content>
-                    <mgl-timeline-entry-side class="subtitle">{{history.startMonth}},{{history.startYear}}-{{history.endMonth}},{{history.endYear}}</mgl-timeline-entry-side>
-                </mgl-timeline-entry>
-    </div>
-</mgl-timeline>
+        <div class="container left">
+          <div class="content">
+            <h2 class = "subtitle">{{history.startMonth}}, {{history.startYear}}</h2>
+            <p>{{history.title}}</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2 class = "subtitle">{{history.endMonth}}, {{history.endYear}}</h2>
+            <p>{{history.description}}</p>
+          </div>
+        </div>
+    </div>    
+</div>

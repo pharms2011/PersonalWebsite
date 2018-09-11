@@ -99,4 +99,12 @@ public class WorkHistory {
 	public void setEndYear(String endYear) {
 		this.endYear = endYear;
 	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
 }

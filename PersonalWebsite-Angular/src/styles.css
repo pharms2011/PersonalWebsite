@@ -2,9 +2,9 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 *{
     font-family: "Arial Black", Gadget, sans-serif;
-  }
+    font-size: 1em;
+}
 html,body {
-    background: #000000;
     margin:0;
     padding:0;
 }
@@ -14,43 +14,29 @@ a{
 footer{
     position:fixed;
     bottom:0;
-    width: 120%; 
+    width: 100%; 
     margin: 0%;
     padding: 0%;
 }
-header{
-    top: 0; 
-    height: auto;
-    color: white;
-    font-size: 1.5vw;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-    float: right;
-    margin: 0 0 1em 0;
-    padding: 0;
-    background-image: url(https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  }
-.blueSteel{
-    background:#0c2b5b;
-    color: white;
+.dark{
+    background:#0C1231;
+    color: #2645E3;
 }
-.steel{
-    background: #202020;
-    color: white;
+.medium{
+    background: #2645E3;
+    color: #DFE4FB;
 }
-.black{
-    background:#000000;
-    color: white;
+.light{
+    background:#8193EF;
+    color: #0C1231;
 }
-.turquoise{
-    background: #5F9EA0;
-    color: white;
+.white{
+    background:#DFE4FB;
+    color:#132890;
 }
 .subtitle{
-    text-transform: uppercase;
+    font-size: 1.25em;
 }
 .title{
-    color: white;
-    font-size: 2em;
+    font-size: 1.5em;
   }
