@@ -14,8 +14,8 @@ public class WorkHistoryTest {
 	
 	//@Test
 	public void addWorkHistory() {
-		WorkHistory wh = new WorkHistory(0,"January", "July", "Revaature", "21018","2018");
-		workHistoryDAO.saveWorkHistory(wh);
+		//WorkHistory wh = new WorkHistory(0,"January", "July", "Revaature", "21018","2018");
+		//workHistoryDAO.saveWorkHistory(wh);
 	}
 	
 	//@Test

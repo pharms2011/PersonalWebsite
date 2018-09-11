@@ -1,0 +1,28 @@
+
+        <table mat-table [dataSource]="education" multiTemplateDataRows class="mat-elevation-z8 steel">
+
+            <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+            <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+        
+        
+            <!-- School Column -->
+            <ng-container matColumnDef="School" >
+              <th class="steel" mat-header-cell *matHeaderCellDef> School </th>
+              <td class="steel" mat-cell *matCellDef="let education"> {{education.school}} </td>
+            </ng-container>
+        
+            <!--  Major Column -->
+            <ng-container matColumnDef="Major">
+              <th class="steel" mat-header-cell *matHeaderCellDef> Major </th>
+              <td class="steel" mat-cell *matCellDef="let education"> {{education.major}} </td>
+            </ng-container>
+        
+            <!-- Start/End Column -->
+            <ng-container matColumnDef="Start/End Month">
+              <th class="steel" mat-header-cell *matHeaderCellDef> Start Month </th>
+              <td class="steel" mat-cell *matCellDef="let education"> {{education.startMonth}},{{education.endMonth}} </td>
+            </ng-container>
+        
+          </table>
+        
+ 

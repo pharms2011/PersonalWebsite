@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 2rem auto;
+  box-shadow: 0 0.25rem 2rem 0 rgba(0, 0, 0, 0.3);
+}
+
+a{
+  color: #67AFCB;
+}
+
+table {
+  width: 80%;     
+}
+
+tr{
+  color: #E4F1F6;
+}
+
+.resume-card {
+  width: 60%;
+  align-self:flex-end;
+  float: right;
+}
+
+.profilePic {
+  float: left;
+  max-width: 30%;
+  height: auto;
+  width: auto; 
+}

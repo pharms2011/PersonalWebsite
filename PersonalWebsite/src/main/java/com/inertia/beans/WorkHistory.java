@@ -14,7 +14,7 @@ public class WorkHistory {
 		// TODO Auto-generated constructor stub
 	}
 
-	public WorkHistory(int workHistoryId, String startMonth, String endMonth, String title, String startYear,String endYear) {
+	public WorkHistory(int workHistoryId, String startMonth, String endMonth, String title, String startYear,String endYear, String description) {
 		super();
 		this.workHistoryId = workHistoryId;
 		this.startMonth = startMonth;
@@ -35,13 +35,16 @@ public class WorkHistory {
 	private String endMonth;
 	
 	@Column(name = "TITLE")
-	String title;
+	private String title;
 	
 	@Column(name = "START_YEAR")
-	String startYear;
+	private String startYear;
 	
 	@Column(name = "END_YEAR")
-	String endYear;
+	private String endYear;
+	
+	@Column(name = "DESCRIPTION")
+	private String description;
 
 	@Override
 	public String toString() {

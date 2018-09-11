@@ -1,8 +1,42 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Preston Harms
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="header">   
+</div>
 
+<app-hexagons></app-hexagons>
 
+<div class = "container">
+  <div class="row black">
+    
+    <img width="300" class="profilePic col-3" alt="Profile Pic" src="https://lh3.googleusercontent.com/CP1aHb5B0kZa_B5NdYS_h7Azmji_NzUe6S_PFdnabVbdz6fDhxZLf5YgUSz7azsLcYflYGurPXLAs9tnRTxJF6WaaTigTE86FLCp47ZpBM3Orx90KzA_kHiAWh75oVJjE7RlatT-D2Krd6WwhPOd9rsvK0UjRhqGI0OiWofJRhKx4xKJZ_NIW78B1i3goHtB4NcSqGCbjw-EeJDds64f-fjwCf9ecc-50J_E3spE1d4KmWCKQxLRCE3Mys6YtvBc1fReCRlTZVVgsN8jY3mEz0mWKoocxDEVtSU8NtMDN19LRdZyyv6Mf0zL5vFTjiO_EXNXiRG92AVKloqspjx8qLvu5pGobdqYHZQ7qhRVHqBPpAqDyoBGcQqe0PKLmfCED7PWSovBVrnrWXpgfh-FYPwOMxMY6Osp3jdJJEj0rYiIdpPm5lb4FQtroIISXhiF2OIJegqTl_Tf7a3l49Vqwe2cie5fmFGbsU2xu-s5CKOQfP_N_q_h_AIAJXPUZG_BMyeiHQsrIMTYfuuXLBzlxwXdWJHnWJprT_ElT-JGq3CRWxuNMLbL1Yci9Rkbr9affTed21kfGOjjTb3bVljAyRd1J0b4fnQRmaY2glA=w624-h832-no">    
+  
+    <mat-card class="resume-card blueSteel">
+
+      <div class="col-3">
+        <mat-card-header>
+          <mat-card-title class = "title">Skills</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <app-skill-component></app-skill-component>
+        </mat-card-content>
+      </div>
+  
+      <div class="col-3">
+        <mat-card-header>
+          <mat-card-title class = "title">Education</mat-card-title>
+        </mat-card-header>
+       <mat-card-content>
+          <app-education-component></app-education-component>
+        </mat-card-content>
+      </div>
+
+      <div class="col-3">
+        <mat-card-header>
+          <mat-card-title class = "title">Work History</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <app-work-history-component></app-work-history-component>
+        </mat-card-content>
+      </div>
+
+    </mat-card> 
+  </div>
+</div>

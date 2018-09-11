@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 100vh;
+  }
+  
+  svg {
+    mix-blend-mode: overlay;
+  }
+  
+  path {
+    stroke: white;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
