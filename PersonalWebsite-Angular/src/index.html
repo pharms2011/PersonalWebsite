@@ -1,12 +1,17 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en" class="light">
 <link rel="icon" type="image/x-icon" href="assets/power.ico">
-<head class="dark">
+<head \>
   <meta charset="utf-8">
   <title>Preston Harms Software Developer</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<nav class="dark">
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
 <body>
   <app-root></app-root>
 </body>

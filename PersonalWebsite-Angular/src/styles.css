@@ -11,6 +11,10 @@ html,body {
 a{
     color:white;
 }
+nav{
+    width: 100%;
+    font-size: 2em;
+}
 footer{
     position:fixed;
     bottom:0;
@@ -36,7 +40,16 @@ footer{
 }
 .subtitle{
     font-size: 1.25em;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
 }
 .title{
-    font-size: 1.5em;
+    font-size: 2em;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
   }

@@ -1,5 +1,4 @@
-
-        <table mat-table [dataSource]="education" multiTemplateDataRows class="mat-elevation-z8 steel">
+        <table mat-table [dataSource]="education" multiTemplateDataRows class="mat-elevation-z8 light">
 
             <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
             <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
@@ -7,20 +6,20 @@
         
             <!-- School Column -->
             <ng-container matColumnDef="School" >
-              <th class="steel" mat-header-cell *matHeaderCellDef> School </th>
-              <td class="steel" mat-cell *matCellDef="let education"> {{education.school}} </td>
+              <th class="white" mat-header-cell *matHeaderCellDef> School </th>
+              <td class="white" mat-cell *matCellDef="let education"> {{education.school}}    </td>
             </ng-container>
         
             <!--  Major Column -->
             <ng-container matColumnDef="Major">
-              <th class="steel" mat-header-cell *matHeaderCellDef> Major </th>
-              <td class="steel" mat-cell *matCellDef="let education"> {{education.major}} </td>
+              <th class="white" mat-header-cell *matHeaderCellDef> Major </th>
+              <td class="white" mat-cell *matCellDef="let education"> {{education.major}}   </td>
             </ng-container>
         
             <!-- Start/End Column -->
             <ng-container matColumnDef="Start/End Month">
-              <th class="steel" mat-header-cell *matHeaderCellDef> Start Month </th>
-              <td class="steel" mat-cell *matCellDef="let education"> {{education.startMonth}},{{education.endMonth}} </td>
+              <th class="white" mat-header-cell *matHeaderCellDef> Start Month </th>
+              <td class="white" mat-cell *matCellDef="let education"> {{education.startMonth}},{{education.endMonth}}   </td>
             </ng-container>
         
           </table>

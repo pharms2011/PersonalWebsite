@@ -1,0 +1,61 @@
+
+<mat-grid-list cols="6" rowHeight="100px">
+    
+  <mat-grid-tile
+    [colspan]="1"
+    [rowspan]="3">
+    <img flex width="100%" class="profilePic col-3" alt="Profile Pic" src="https://lh3.googleusercontent.com/CP1aHb5B0kZa_B5NdYS_h7Azmji_NzUe6S_PFdnabVbdz6fDhxZLf5YgUSz7azsLcYflYGurPXLAs9tnRTxJF6WaaTigTE86FLCp47ZpBM3Orx90KzA_kHiAWh75oVJjE7RlatT-D2Krd6WwhPOd9rsvK0UjRhqGI0OiWofJRhKx4xKJZ_NIW78B1i3goHtB4NcSqGCbjw-EeJDds64f-fjwCf9ecc-50J_E3spE1d4KmWCKQxLRCE3Mys6YtvBc1fReCRlTZVVgsN8jY3mEz0mWKoocxDEVtSU8NtMDN19LRdZyyv6Mf0zL5vFTjiO_EXNXiRG92AVKloqspjx8qLvu5pGobdqYHZQ7qhRVHqBPpAqDyoBGcQqe0PKLmfCED7PWSovBVrnrWXpgfh-FYPwOMxMY6Osp3jdJJEj0rYiIdpPm5lb4FQtroIISXhiF2OIJegqTl_Tf7a3l49Vqwe2cie5fmFGbsU2xu-s5CKOQfP_N_q_h_AIAJXPUZG_BMyeiHQsrIMTYfuuXLBzlxwXdWJHnWJprT_ElT-JGq3CRWxuNMLbL1Yci9Rkbr9affTed21kfGOjjTb3bVljAyRd1J0b4fnQRmaY2glA=w624-h832-no">    
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="2"
+    [rowspan]="1">
+    <h1 class = "dark title">Preston Harms</h1>
+    </mat-grid-tile>
+    <mat-grid-tile
+    [colspan]="2"
+    [rowspan]="1">
+    <h2 class="title medium">Work History</h2>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="2"
+    [rowspan]="2"> 
+    <p class="medium" style="height:100%">My name is Preston Harms and I am a full stack software developer. Currently I work as a developer with Infosys with on a project for their client Boeing while working
+      towards my master in Computer Science as Georgia tech.</p>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="2"
+    [rowspan]="6">
+    <app-work-history-component></app-work-history-component>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="3"
+    [rowspan]="1">
+    <h2 flex class = "light subtitle">Software Developer</h2>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="3"
+    [rowspan]="1">
+    <h2 flex class = "white subtitle">Software Developer</h2>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="2"
+    [rowspan]="1">
+    <h2 class="title medium">Education</h2>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="2"
+    [rowspan]="1">
+    <h2 class="title medium">Skills</h2>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="2"
+    [rowspan]="2" style="width:100%">
+    <app-education-component></app-education-component>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="2"
+    [rowspan]="2" style="width:100%">
+    <app-skill-component></app-skill-component>
+  </mat-grid-tile>
+</mat-grid-list>
+

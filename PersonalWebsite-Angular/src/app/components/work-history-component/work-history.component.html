@@ -1,16 +1,14 @@
-<div class="timeline light">
-    <div *ngFor = "let history of workHistorys">
-        <div class="container left">
-          <div class="content">
-            <h2 class = "subtitle">{{history.startMonth}}, {{history.startYear}}</h2>
-            <p>{{history.title}}</p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2 class = "subtitle">{{history.endMonth}}, {{history.endYear}}</h2>
-            <p>{{history.description}}</p>
-          </div>
-        </div>
-    </div>    
-</div>
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let history of workHistorys">
+      <mat-expansion-panel-header class="dark">
+        <mat-panel-title>
+         {{history.startMonth}},{{history.startYear}}-{{history.endMonth}},{{history.endYear}} 
+        </mat-panel-title>
+        <mat-panel-description>
+            {{history.title}}
+        </mat-panel-description>
+      </mat-expansion-panel-header class="medium">
+        <p class="light"> {{history.description}}</p>
+      </mat-expansion-panel>
+
+  </mat-accordion>

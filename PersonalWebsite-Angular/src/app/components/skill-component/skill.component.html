@@ -1,5 +1,5 @@
-<h2>Programming Languages</h2>
-<mat-chip-list class="mat-chip-list">
+<h2 class="skillTitle" style="width:100%">Programming Languages</h2>
+<mat-chip-list class="mat-chip-list" style="width:100%">
   <div *ngFor = "let skill of skills">
     <mat-chip *ngIf = "skill.skillType == 'Programming Language'" 
     matTooltip="{{skill.level}}"
@@ -10,8 +10,8 @@
   </div>
 </mat-chip-list>
   
-<h2>Front End</h2>
-<mat-chip-list class="mat-chip-list">
+<h2 class="skillTitle" style="width:100%">Front End</h2>
+<mat-chip-list class="mat-chip-list" style="width:100%">
   <div *ngFor = "let skill of skills">
     <mat-chip *ngIf = "skill.skillType == 'Front End'"
     matTooltip="{{skill.level}}"
@@ -22,8 +22,20 @@
   </div>
 </mat-chip-list>
 
-<h2>Dev Ops</h2>
-<mat-chip-list class="mat-chip-list">
+<h2 class="skillTitle" style="width:100%">Frameworks</h2>
+<mat-chip-list class="mat-chip-list" style="width:100%">
+  <div *ngFor = "let skill of skills">
+    <mat-chip *ngIf = "skill.skillType == 'Framework'"
+    matTooltip="{{skill.level}}"
+    [matTooltipShowDelay]="1000"
+    [matTooltipHideDelay]="200">
+      <label>{{skill.description}}</label>
+    </mat-chip>
+  </div>
+</mat-chip-list>
+
+<h2 class="skillTitle" style="width:100%">Dev Ops</h2>
+<mat-chip-list class="mat-chip-list" style="width:100%">
   <div *ngFor = "let skill of skills">
     <mat-chip *ngIf = "skill.skillType == 'Dev Ops'"
     matTooltip="{{skill.level}}"

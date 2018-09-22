@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-size: .905em;
   }
   
   /* Set a background color */
@@ -94,7 +95,7 @@
   
   /* The actual content */
   .content {
-    padding: 20px 30px;
+    padding: 5pt;
     background-color: white;
     position: relative;
     border-radius: 6px;
@@ -112,11 +113,12 @@
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
+      align-self: flex-start;
     }
   
   /* Make sure that all arrows are pointing leftwards */
     .container::before {
-      left: 60px;
+      left: 60%;
       border: medium solid white;
       border-width: 10px 10px 10px 0;
       border-color: transparent white transparent transparent;
@@ -124,7 +126,7 @@
   
   /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-      left: 15px;
+      left: 15%;
     }
   
   /* Make all right containers behave like the left ones */
