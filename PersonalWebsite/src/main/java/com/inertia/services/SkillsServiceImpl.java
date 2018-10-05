@@ -5,9 +5,9 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.inertia.beans.Skills;
-import com.inertia.dao.SkillsDAO;
-import com.inertia.dao.SkillsDAOImpl;
+import com.inertia.beans.resume.Skills;
+import com.inertia.dao.resume.SkillsDAO;
+import com.inertia.dao.resume.SkillsDAOImpl;
 
 @Service("skillsService")
 public class SkillsServiceImpl implements SkillsService{

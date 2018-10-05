@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.inertia.beans.WorkHistory;
-import com.inertia.dao.WorkHistoryDAO;
+import com.inertia.beans.resume.WorkHistory;
+import com.inertia.dao.resume.WorkHistoryDAO;
 
 @Service("workHistoryService")
 public class WorkHistoryServiceImpl implements WorkHistoryService{

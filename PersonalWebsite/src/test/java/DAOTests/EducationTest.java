@@ -4,18 +4,21 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import com.inertia.beans.Education;
-import com.inertia.dao.EducationDAOImpl;
+import com.inertia.beans.perBlog.PerBlogEntry;
+import com.inertia.beans.resume.Education;
+import com.inertia.dao.perBlog.PerBlogEntryDAOImpl;
+import com.inertia.dao.resume.EducationDAOImpl;
 
 public class EducationTest {
 	
 	public EducationDAOImpl educationDAO = new EducationDAOImpl();
+	public PerBlogEntryDAOImpl blogDao = new PerBlogEntryDAOImpl();
 	
-	//@Test
+	@Test
 	public void saveTest() {
-		Education education = new Education(0,"University of Northern Colorado","Mathematics","August","May","2015","2013");
-		educationDAO.saveEducation(education);
-		assertNotNull(education);
+		PerBlogEntry perEntry = new PerBlogEntry(0, "Test", null, null, null, null);
+		blogDao.savePerBlogEntry(perEntry);
+		assertNotNull(perEntry);
 	}
 	
 	//@Test

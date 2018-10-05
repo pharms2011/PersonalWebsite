@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.inertia.beans.Education;
+import com.inertia.beans.resume.Education;
 import com.inertia.services.EducationServiceImpl;
 
 @RequestMapping("/education")

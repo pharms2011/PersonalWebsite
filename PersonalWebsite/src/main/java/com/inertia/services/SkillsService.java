@@ -2,7 +2,7 @@ package com.inertia.services;
 
 import java.util.Collection;
 
-import com.inertia.beans.Skills;
+import com.inertia.beans.resume.Skills;
 
 public interface SkillsService {
 	public Skills getSkill(int id);

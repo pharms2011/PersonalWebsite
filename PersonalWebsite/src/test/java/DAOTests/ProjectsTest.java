@@ -12,11 +12,11 @@ import org.hibernate.Transaction;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.inertia.beans.Projects;
-import com.inertia.beans.Skills;
-import com.inertia.dao.ProjectsDAO;
-import com.inertia.dao.ProjectsDAOImpl;
-import com.inertia.dao.SkillsDAOImpl;
+import com.inertia.beans.projects.Projects;
+import com.inertia.beans.resume.Skills;
+import com.inertia.dao.resume.ProjectsDAO;
+import com.inertia.dao.resume.ProjectsDAOImpl;
+import com.inertia.dao.resume.SkillsDAOImpl;
 import com.inertia.util.HibernateUtil;
 
 public class ProjectsTest {

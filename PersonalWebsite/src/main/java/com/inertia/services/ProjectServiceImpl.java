@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.inertia.beans.Projects;
-import com.inertia.dao.ProjectsDAO;
+import com.inertia.beans.projects.Projects;
+import com.inertia.dao.resume.ProjectsDAO;
 
 @Service("projectService")
 public class ProjectServiceImpl implements ProjectService{

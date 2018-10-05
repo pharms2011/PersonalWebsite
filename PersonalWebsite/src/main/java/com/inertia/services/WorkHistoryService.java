@@ -2,7 +2,7 @@ package com.inertia.services;
 
 import java.util.ArrayList;
 
-import com.inertia.beans.WorkHistory;
+import com.inertia.beans.resume.WorkHistory;
 
 public interface WorkHistoryService {
 	

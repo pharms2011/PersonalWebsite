@@ -2,7 +2,7 @@ package com.inertia.services;
 
 import java.util.ArrayList;
 
-import com.inertia.beans.Education;
+import com.inertia.beans.resume.Education;
 
 public interface EducationService {
 	

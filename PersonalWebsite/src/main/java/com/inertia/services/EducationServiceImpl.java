@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.inertia.beans.Education;
-import com.inertia.dao.EducationDAO;
+import com.inertia.beans.resume.Education;
+import com.inertia.dao.resume.EducationDAO;
 
 @Service("educationService")
 public class EducationServiceImpl implements EducationService{

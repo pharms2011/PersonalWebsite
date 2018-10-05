@@ -4,9 +4,9 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import com.inertia.beans.WorkHistory;
-import com.inertia.dao.WorkHistoryDAO;
-import com.inertia.dao.WorkHistoryDAOImpl;
+import com.inertia.beans.resume.WorkHistory;
+import com.inertia.dao.resume.WorkHistoryDAO;
+import com.inertia.dao.resume.WorkHistoryDAOImpl;
 
 public class WorkHistoryTest {
 	

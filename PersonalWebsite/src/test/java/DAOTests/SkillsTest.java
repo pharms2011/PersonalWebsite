@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.inertia.beans.Skills;
-import com.inertia.dao.SkillsDAO;
-import com.inertia.dao.SkillsDAOImpl;
+import com.inertia.beans.resume.Skills;
+import com.inertia.dao.resume.SkillsDAO;
+import com.inertia.dao.resume.SkillsDAOImpl;
 
 public class SkillsTest {
 	

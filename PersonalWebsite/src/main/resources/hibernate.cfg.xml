@@ -13,9 +13,13 @@
 		<!-- choose whether to create db or update existing db -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<!-- map domain object classes -->
-		<mapping class="com.inertia.beans.Skills"/>
-		<mapping class="com.inertia.beans.Projects"/>
-		<mapping class="com.inertia.beans.WorkHistory"/>
-		<mapping class="com.inertia.beans.Education"/>
+		<mapping class="com.inertia.beans.resume.Skills"/>
+		<mapping class="com.inertia.beans.projects.Projects"/>
+		<mapping class="com.inertia.beans.resume.WorkHistory"/>
+		<mapping class="com.inertia.beans.resume.Education"/>
+		<mapping class="com.inertia.beans.perBlog.PerBlogEntry"/>
+		<mapping class="com.inertia.beans.perBlog.PerBlogPic"/>
+		<mapping class="com.inertia.beans.devBlog.DevBlogEntry"/>
+		<mapping class="com.inertia.beans.devBlog.DevBlogLink"/>
 	</session-factory>
 </hibernate-configuration>

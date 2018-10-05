@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.inertia.beans.Projects;
+import com.inertia.beans.projects.Projects;
 import com.inertia.services.ProjectService;
 
 @RequestMapping("/projects")

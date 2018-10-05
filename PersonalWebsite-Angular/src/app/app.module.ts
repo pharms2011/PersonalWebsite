@@ -15,15 +15,15 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatExpansionModule,MatGridListModule, MatTooltipModule, MatDividerModule, MatTableDataSource, MatSort, MatCardModule, MatProgressSpinnerModule, MatMenuModule, MatIconModule, MatToolbarModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatSortModule, MatTableModule, MatChipsModule} from '@angular/material';
+import { MatTabsModule,MatExpansionModule,MatGridListModule, MatTooltipModule, MatDividerModule, MatTableDataSource, MatSort, MatCardModule, MatProgressSpinnerModule, MatMenuModule, MatIconModule, MatToolbarModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatSortModule, MatTableModule, MatChipsModule} from '@angular/material';
 import { DataSource } from '@angular/cdk/table';
 import { HexagonsComponent } from './components/hexagons/hexagons.component';
 
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { AppRoutingModule } from './/app-routing.module';
-import { ResumePageComponent } from './resume-page/resume-page.component';
-import { DevBlogPageComponent } from './dev-blog-page/dev-blog-page.component';
-import { PersonalBlogPageComponent } from './personal-blog-page/personal-blog-page.component';
+import { ResumePageComponent } from './pages/resume-page/resume-page.component';
+import { DevBlogPageComponent } from './pages/dev-blog-page/dev-blog-page.component';
+import { PersonalBlogPageComponent } from './pages/personal-blog-page/personal-blog-page.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +59,8 @@ import { PersonalBlogPageComponent } from './personal-blog-page/personal-blog-pa
     MglTimelineModule,
     MatGridListModule,
     AppRoutingModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTabsModule
   ],
   providers: [
     EducationService,

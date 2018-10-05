@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.inertia.beans.WorkHistory;
+import com.inertia.beans.resume.WorkHistory;
 import com.inertia.services.WorkHistoryServiceImpl;
 
 @RequestMapping("/workHistory")

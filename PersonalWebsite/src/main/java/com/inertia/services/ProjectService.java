@@ -2,7 +2,7 @@ package com.inertia.services;
 
 import java.util.ArrayList;
 
-import com.inertia.beans.Projects;
+import com.inertia.beans.projects.Projects;
 
 public interface ProjectService {
 	
