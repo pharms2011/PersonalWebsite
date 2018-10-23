@@ -1,4 +1,4 @@
-package com.inertia.beans.devBlog;
+	package com.inertia.beans.devBlog;
 
 import java.sql.Date;
 import java.util.ArrayList;
@@ -66,7 +66,7 @@ public class DevBlogEntry {
 	private String title;
 	
 	//(mappedBy = "devBlogEntryId", cascade = {CascadeType.ALL}, )
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "DEV_BLOG_ENTRY_ID", referencedColumnName = "DEV_BLOG_ENTRY_ID")
 	private List<DevBlogLink> links = new ArrayList<DevBlogLink>();
 	

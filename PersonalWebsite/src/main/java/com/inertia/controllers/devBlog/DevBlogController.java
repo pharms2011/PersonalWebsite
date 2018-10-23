@@ -30,7 +30,7 @@ public class DevBlogController {
 	DevBlogService devBlogService;
 	@GetMapping("/all")
 	@ResponseBody
-	public ResponseEntity<Collection<DevBlogEntry>> getAllEducation(){
+	public ResponseEntity<Collection<DevBlogEntry>> getAll(){
 		ArrayList<DevBlogEntry> entry = (ArrayList<DevBlogEntry>) devBlogService.getAll();
 		if(entry != null) {
 			return new ResponseEntity<>(entry, HttpStatus.OK);
