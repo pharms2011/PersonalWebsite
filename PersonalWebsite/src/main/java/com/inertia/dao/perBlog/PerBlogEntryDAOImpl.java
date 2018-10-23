@@ -80,8 +80,10 @@ public class PerBlogEntryDAOImpl implements PerBlogEntryDAO{
 		s.close();
 		ArrayList<PerBlogEntry> pubEntries = new ArrayList<PerBlogEntry>();
 		for(PerBlogEntry entry : allEntries) {
-			if(entry.getPublished().equals("Y")) {
-				pubEntries.add(entry);
+			if(entry.getPublished() != null) {
+				if(entry.getPublished().equals("Y")) {
+					pubEntries.add(entry);
+				}
 			}
 		}
 		return pubEntries;
