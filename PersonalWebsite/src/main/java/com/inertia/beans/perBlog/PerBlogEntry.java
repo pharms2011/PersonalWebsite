@@ -52,7 +52,7 @@ public class PerBlogEntry {
 	@Column(name = "PUBLISHED")
 	private String published;
 	
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "PER_BLOG_ENTRY_ID", referencedColumnName = "PER_BLOG_ENTRY_ID")
 	private List<PerBlogPic> pictures = new ArrayList<PerBlogPic>();
 	
