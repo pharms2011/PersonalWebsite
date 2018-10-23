@@ -5,11 +5,13 @@ import java.util.Collection;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Repository;
 
 import com.inertia.beans.devBlog.DevBlogEntry;
 import com.inertia.beans.devBlog.DevBlogLink;
 import com.inertia.util.HibernateUtil;
 
+@Repository("devBlogDao")
 public class DevBlogEntryDAOImpl implements DevBlogEntryDAO{
 
 	@Override

@@ -20,7 +20,7 @@ public class EducationTest {
 	public EducationDAOImpl educationDAO = new EducationDAOImpl();
 	public PerBlogEntryDAOImpl blogDao = new PerBlogEntryDAOImpl();
 	
-	@Test
+	//@Test
 	public void saveTest() {
 		PerBlogEntry perEntry = new PerBlogEntry();
 		//ArrayList<PerBlogPic> devBlogLinks = new ArrayList<PerBlogPic>();
@@ -35,7 +35,7 @@ public class EducationTest {
 		assertNotNull(perEntry);
 	}
 	
-	@Test
+	//@Test
 	public void getTest() {
 		assertNotNull(educationDAO.getEducationById(1000));
 	}

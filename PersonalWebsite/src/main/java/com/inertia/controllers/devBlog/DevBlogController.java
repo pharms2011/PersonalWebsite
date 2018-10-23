@@ -22,7 +22,7 @@ import com.inertia.services.devBlog.DevBlogService;
 import com.inertia.services.perBlog.PerBlogService;
 
 @RequestMapping("/devBlog")
-@Controller("perBlogController")
+@Controller("devBlogController")
 @CrossOrigin(origins = "http://localhost:4200")
 public class DevBlogController {
 	
