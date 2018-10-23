@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.inertia.beans.resume.Skills;
-import com.inertia.services.SkillsServiceImpl;
+import com.inertia.services.resume.SkillsServiceImpl;
 
 public class SkillsServiceTests {
 	

@@ -6,9 +6,11 @@ import com.inertia.beans.perBlog.PerBlogEntry;
 
 public interface PerBlogEntryDAO {
 	
-	public PerBlogEntry getDevBlogEntry(int id);  
+	public PerBlogEntry getPerBlogEntry(int id);
 	
-	public ArrayList<PerBlogEntry> getAllDevBlogEntrys();
+	public ArrayList<PerBlogEntry> getPubBlogEntry();
+	
+	public ArrayList<PerBlogEntry> getAllPerBlogEntrys();
 	
 	public void savePerBlogEntry(PerBlogEntry perBlogEntry);
 	

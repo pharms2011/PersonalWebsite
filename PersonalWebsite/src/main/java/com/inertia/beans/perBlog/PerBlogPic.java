@@ -2,7 +2,10 @@ package com.inertia.beans.perBlog;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
@@ -10,6 +13,8 @@ import javax.persistence.Table;
 public class PerBlogPic {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="PerBlogPic_IdSequence")
+    @SequenceGenerator(allocationSize=1,name="PerBlogPic_IdSequence",sequenceName="PER_BLOG_PIC_SEQ")
 	@Column(name = "PER_BLOG_PIC_ID")
 	private int perBlogPicId;
 	
@@ -41,6 +46,12 @@ public class PerBlogPic {
 
 	public void setPerBlogPic(String perBlogPic) {
 		this.perBlogPic = perBlogPic;
+	}
+
+	@Override
+	public String toString() {
+		return "PerBlogPic [perBlogPicId=" + perBlogPicId + ", perBlogEntryId=" + perBlogEntryId + ", perBlogPic="
+				+ perBlogPic + "]";
 	}
 
 }

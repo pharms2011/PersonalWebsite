@@ -3,17 +3,29 @@ package com.inertia.beans.perBlog;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "PER_BLOG_ENTRY")
 public class PerBlogEntry {
 	
+	public PerBlogEntry() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public PerBlogEntry(int perBlogEntryId, String perBlogEntry, Date entryDate, String published,
 			ArrayList<PerBlogPic> pictures, String title) {
 		super();
@@ -26,6 +38,8 @@ public class PerBlogEntry {
 	}
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="PerBlog_IdSequence")
+    @SequenceGenerator(allocationSize=1,name="PerBlog_IdSequence",sequenceName="PER_BLOG_SEQ")
 	@Column(name = "PER_BLOG_ENTRY_ID")
 	private int perBlogEntryId;
 	
@@ -38,8 +52,9 @@ public class PerBlogEntry {
 	@Column(name = "PUBLISHED")
 	private String published;
 	
-	@OneToMany(mappedBy = "perBlogEntryId")
-	private Collection<PerBlogPic> pictures;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinColumn(name = "PER_BLOG_ENTRY_ID", referencedColumnName = "PER_BLOG_ENTRY_ID")
+	private List<PerBlogPic> pictures = new ArrayList<PerBlogPic>();
 	
 	@Column(name = "Title")
 	private String title;
@@ -76,7 +91,7 @@ public class PerBlogEntry {
 		this.published = published;
 	}
 
-	public Collection<PerBlogPic> getPictures() {
+	public List<PerBlogPic> getPictures() {
 		return pictures;
 	}
 
@@ -90,6 +105,12 @@ public class PerBlogEntry {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	@Override
+	public String toString() {
+		return "PerBlogEntry [perBlogEntryId=" + perBlogEntryId + ", perBlogEntry=" + perBlogEntry + ", entryDate="
+				+ entryDate + ", published=" + published + ", pictures=" + pictures + ", title=" + title + "]";
 	}
 
 }

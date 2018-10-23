@@ -16,10 +16,10 @@ public class Driver {
 		System.out.println(devEntry);
 		System.out.println(devEntry);
 		for(int i = 0; i < 3; i++) {
-			devBlogLinks.add(new DevBlogLink(0,i+".com",devEntry.getDevBlogId()));
+			devEntry.getLinks().add(new DevBlogLink(0,i+".com",devEntry.getDevBlogId()));
 		}
 		//devEntry.setLinks(devBlogLinks);
-		System.out.println(devEntry);
+		System.out.println(devEntry);   
 		devDao.saveDevBlogEntry(devEntry);
 	}
 }
