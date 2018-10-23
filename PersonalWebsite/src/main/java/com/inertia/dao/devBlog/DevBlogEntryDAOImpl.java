@@ -78,8 +78,10 @@ public class DevBlogEntryDAOImpl implements DevBlogEntryDAO{
 		s.close();
 		ArrayList<DevBlogEntry> pubEntries = new ArrayList<DevBlogEntry>();
 		for(DevBlogEntry entry : allEntries) {
-			if(entry.getPublished().equals("Y")) {
-				pubEntries.add(entry);
+			if(entry.getPublished() != null) {
+				if(entry.getPublished().equals("Y")) {
+					pubEntries.add(entry);
+				}
 			}
 		}
 		return pubEntries;
