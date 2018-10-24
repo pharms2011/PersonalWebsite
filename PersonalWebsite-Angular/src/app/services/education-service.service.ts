@@ -16,6 +16,7 @@ const httpOptions = {
 export class EducationService{
 
   url: string = "http://ec2-18-204-219-176.compute-1.amazonaws.com:8080/PersonalWebsite/education/";
+  
   constructor(private http: HttpClient) { };
   getAllEducation(): Observable<Education[]>{
     return this.http.get<Education[]>(this.url + "all", httpOptions);
