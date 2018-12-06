@@ -24,6 +24,7 @@ export class SkillComponent implements OnInit {
   showDelay = new FormControl(1000);
   hideDelay = new FormControl(2000);
   skills : Skill[];
+  chipColor : String = "#7AE7C7";
   constructor(private skillService : SkillService) {
     this.getSkills();
    }

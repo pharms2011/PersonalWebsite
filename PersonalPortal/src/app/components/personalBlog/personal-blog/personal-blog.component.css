@@ -1,0 +1,8 @@
+.pictureViewer{
+    width: 90%;
+    height: 25em;
+    background-color: black;
+    display: inline-block;
+    overflow: hidden;
+    text-align:center;;
+}

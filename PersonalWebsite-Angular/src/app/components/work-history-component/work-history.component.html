@@ -1,0 +1,24 @@
+<div class="frame">
+    <h1 class="componenetHeader"> Work History</h1>
+    <div class="timeline">
+        <div *ngFor="let workHistory of workHistorys; let i = index">
+            <div *ngIf="!switch(i)" class="container left">
+                <div class="content">
+                    <h1>{{workHistory.title}}</h1>
+                    <h2>{{workHistory.startMonth}},{{workHistory.startYear}} -
+                        {{workHistory.endMonth}},{{workHistory.endYear}}</h2>
+                    <p>{{workHistory.description}}</p>
+                </div>
+            </div>
+            <div *ngIf="switch(i)" class="container right">
+                <div class="content">
+                    <h1>{{workHistory.title}}</h1>
+                    <h2 *ngIf="workHistory.endMonth">{{workHistory.startMonth}},{{workHistory.startYear}} -
+                        {{workHistory.endMonth}},{{workHistory.endYear}}</h2>
+                    <h2 *ngIf="!workHistory.endMonth">{{workHistory.startMonth}},{{workHistory.startYear}} - Current</h2>
+                    <p>{{workHistory.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

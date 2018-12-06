@@ -1,0 +1,23 @@
+
+<div *ngFor="let entry of entries">
+  <br>
+  <mat-card class="example-card GunMetal">
+    <mat-card-header>
+      <mat-card-title>{{entry.title}}</mat-card-title>
+      <br><br>
+      <div *ngFor="let pic of entry.pictures">
+        <img src={{pic.perBlogPic}} alt={{pic.perBlogPic}} class="iconImg" (click)="setCurrentPic(entry.perBlogEntryId,pic)">
+      </div>
+    </mat-card-header>
+    <div class="selectedFrame">
+      <div *ngIf="entry.selectedImg">
+        <span class="helper"></span>
+        <img src={{entry.selectedImg.perBlogPic}} class="selectedPic">
+      </div>
+    </div>
+    <br>
+    <mat-card-content class='Green'>
+      {{entry.perBlogEntry}}
+    </mat-card-content>
+  </mat-card>
+</div>

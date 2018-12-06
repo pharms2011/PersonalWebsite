@@ -1,0 +1,58 @@
+mat-card-subtitle{
+    color: white;
+}
+
+mat-card-content{
+    text-align: start;
+}
+
+.example-card {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+.example-header-image {
+    background-size: cover;
+    width: 10em;
+    height: 10em;
+  }
+  
+.selectedFrame{
+    width: 90%;
+    height: 25em;
+    background-color: black;
+    display: inline-block;
+    overflow: hidden;
+    text-align:center;
+}
+
+.selectedPic{
+    max-width: auto;
+    max-height: 25em;
+    align-self: center;
+    margin:auto;
+    object-position: center;
+    vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.iconImg{
+    width: 3em;
+    height: 3em;
+    border: 1em;
+    display: block;
+    border-radius: 50%;
+    align-self: right;
+}
+
+.iconImg:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }

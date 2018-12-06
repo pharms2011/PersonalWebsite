@@ -1,0 +1,17 @@
+mat-card-footer{
+  font-size: .5em;
+  align-content: flex-start
+}
+
+.example-card {
+    width: 70%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding :  2em;
+    margin-top : 1em;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }

@@ -10,18 +10,27 @@ import { WorkHistoryService } from '../../services/work-history.service';
 })
 export class WorkHistoryComponent implements OnInit {
   workHistorys: WorkHistory[];
+  switchConst: String;
   constructor(private workHistoryService : WorkHistoryService) { 
     this.getWorkHistory();
+    this.switchConst = "Left";
   }
 
   ngOnInit() {
-    
   }
 
   getWorkHistory():void {
     this.workHistoryService.getAllWorkHistory()
     .subscribe(workHistory => 
       this.workHistorys = workHistory);
-      console.log("this.workHistorys");
+  }
+
+  switch(i : number):boolean{ 
+    if(i%2){
+      return true;
+    }
+    else{
+      return false;
+    }
   }
 }

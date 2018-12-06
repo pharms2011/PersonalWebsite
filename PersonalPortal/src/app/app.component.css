@@ -1,0 +1,29 @@
+html,body{
+    color: #1D2951;
+    height: 100%;
+    width: 100%;
+}
+
+.blue{
+    color: white;
+    background-color: #3A98C3;
+}
+
+.yellow{
+    color: white;
+    background-color: #E8DB52;
+}
+
+.spaceBlue{
+    color: white;
+    background-color: #1D2951;
+}
+ .red{
+     color: white;
+     background-color: #D63230;
+ }
+
+ .comitGreen{
+     color: white;
+     background-color: #7AE7C7;
+ }

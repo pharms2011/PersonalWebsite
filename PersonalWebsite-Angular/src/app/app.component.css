@@ -1,0 +1,48 @@
+
+mat-tab{
+    overflow: scroll;
+}
+.componenetHeader{
+    size: 13em;
+}
+.Black{
+    background-color: #272727;
+    color: white;
+}
+
+.GunMetal{
+    background-color: #233237;
+    color: white;
+}
+
+.Orange{
+    background-color: #FF652F;
+    color: black;
+}
+
+.Yellow{
+    background-color: #FFE400;
+    color: black;
+}
+
+.Green{
+    background-color: #14A761;
+    color: black;
+
+}
+
+header{
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.example-card {
+    width: 70%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin:2em;
+    border: 2em;
+  }

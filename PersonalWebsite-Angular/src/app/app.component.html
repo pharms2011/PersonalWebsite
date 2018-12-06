@@ -1,20 +1,18 @@
 <html lang="en" class="dark">
 <link rel="icon" type="image/x-icon" href="assets/power.ico">
-<head class="dark">
-  <meta charset="utf-8">
-  <title>Preston Harms Software Developer</title>
-  <base href="/root">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 </html>
-<mat-tab-group>
-        <mat-tab label="Resume">       
-            <app-resume-page> </app-resume-page> 
-        </mat-tab>
-        <mat-tab label="Dev Blog"> 
-            <app-dev-blog-page></app-dev-blog-page>
-        </mat-tab>
-        <mat-tab label="Blog"> 
-            <app-personal-blog-page></app-personal-blog-page>
-        </mat-tab>
-      </mat-tab-group>
+<header>
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <app-social-media-bar></app-social-media-bar>
+</header>
+<mat-tab-group class="Black">
+    <mat-tab label="Resume">
+        <app-resume-page> </app-resume-page>
+    </mat-tab>
+    <mat-tab label="Dev Blog">
+        <app-dev-blog-page></app-dev-blog-page>
+    </mat-tab>
+    <mat-tab label="Blog">
+        <app-personal-blog-page></app-personal-blog-page>
+    </mat-tab>
+</mat-tab-group>

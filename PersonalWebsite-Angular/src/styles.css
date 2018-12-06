@@ -1,49 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 *{
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: 'Kalam';
     font-size: 1em;
 }
+
 html,body {
     margin:0;
     padding:0;
 }
+
 a{
     color:white;
 }
+
 nav{
     width: 100%;
     font-size: 2em;
 }
+
+header{
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
 footer{
-    position:fixed;
-    bottom:0;
-    width: 100%; 
-    margin: 0%;
-    padding: 0%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
-.dark{
-    background:#0C1231;
-    color: #2645E3;
-}
-.medium{
-    background: #2645E3;
-    color: #DFE4FB;
-}
-.light{
-    background:#8193EF;
-    color: #0C1231;
-}
-.white{
-    background:#DFE4FB;
-    color:#132890;
-}
+
 .subtitle{
     font-size: 1.25em;
     margin: 0%;
     padding: 0%;
     border: 0%;
 }
+
 .title{
     font-size: 2em;
     align-self: center;
@@ -53,3 +49,34 @@ footer{
     padding: 0%;
     border: 0%;
   }
+
+.DarkBlack{
+    background-color: black;
+    color: white;
+}
+
+.Black{
+    background-color: #272727;
+    color: white;
+}
+
+.GunMetal{
+    background-color: #233237;
+    color: white;
+}
+
+.Orange{
+    background-color: #FF652F;
+    color: black;
+}
+
+.Yellow{
+    background-color: #FFE400;
+    color: black;
+}
+
+.Green{
+    background-color: #14A761;
+    color: black;
+
+}

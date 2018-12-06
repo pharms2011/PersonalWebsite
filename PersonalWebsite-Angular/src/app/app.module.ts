@@ -17,13 +17,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTabsModule,MatExpansionModule,MatGridListModule, MatTooltipModule, MatDividerModule, MatTableDataSource, MatSort, MatCardModule, MatProgressSpinnerModule, MatMenuModule, MatIconModule, MatToolbarModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatSortModule, MatTableModule, MatChipsModule} from '@angular/material';
 import { DataSource } from '@angular/cdk/table';
-import { HexagonsComponent } from './components/hexagons/hexagons.component';
 
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { AppRoutingModule } from './/app-routing.module';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 import { DevBlogPageComponent } from './pages/dev-blog-page/dev-blog-page.component';
 import { PersonalBlogPageComponent } from './pages/personal-blog-page/personal-blog-page.component';
+import { DevBlogComponent } from './components/dev-blog-component/dev-blog/dev-blog.component';
+import { PerBlogComponent } from './components/per-blog-component/per-blog/per-blog.component';
+import { SocialMediaBarComponent } from './components/social-media-bar-component/social-media-bar/social-media-bar.component';
+import { ResumeLeftMenuComponent } from './components/resume-left-menu/resume-left-menu.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +35,13 @@ import { PersonalBlogPageComponent } from './pages/personal-blog-page/personal-b
     WorkHistoryComponent,
     ProjectComponent,
     SkillComponent,
-    HexagonsComponent,
     ResumePageComponent,
     DevBlogPageComponent,
-    PersonalBlogPageComponent
+    PersonalBlogPageComponent,
+    DevBlogComponent,
+    PerBlogComponent,
+    SocialMediaBarComponent,
+    ResumeLeftMenuComponent
   ],
   imports: [
     BrowserModule,

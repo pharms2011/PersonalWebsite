@@ -24,20 +24,28 @@ export class EducationComponent implements OnInit {
   columnsToDisplay = ['School', 'Major', 'Start/End Month'];
   expandedElement: Education;
   @ViewChild(MatSort) sort: MatSort;
-  education : Education[];
+  educations : Education[];
   constructor(
     private educationService : EducationService
   ) {
-    this.getEducation();
-  }
+    this.getEducation();  } 
 
   ngOnInit() {
-    var dataSource = this.education;
+    this.getEducation();
   }
   getEducation():void {
     this.educationService.getAllEducation()
-    .subscribe(education => 
-      this.education = education);
+    .subscribe(educations => 
+      this.educations = educations);
   }
+
+  switch(i : number):boolean{ 
+    if(i%2){
+      return true;
+    }
+    else{
+      return false;
+    }
+  } 
 }
 

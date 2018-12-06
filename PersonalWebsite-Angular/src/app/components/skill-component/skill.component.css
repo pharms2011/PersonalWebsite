@@ -7,11 +7,22 @@
 mat-chip {
     max-width: 20em;
     max-height: 1em;
-    font-size: 1em;
+    font-size: .5em;
+    color: #7AE7C7;
+
+}
+mat-chip-list{
+    width: 100%;
 }
 h2{
-    font-size: .7em;
+    font-size: .5em;
+}
+lable{
+    font-size: .5em;
 }
 .skillTitle{
-    font-size: 1em;
+    font-size: 1.5em;
+}
+.componenetHeader{
+    font-size:  3em;
 }

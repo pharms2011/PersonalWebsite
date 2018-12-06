@@ -1,27 +1,21 @@
-        <table mat-table [dataSource]="education" multiTemplateDataRows class="mat-elevation-z8 light">
-
-            <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-            <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
-        
-        
-            <!-- School Column -->
-            <ng-container matColumnDef="School" >
-              <th class="white" mat-header-cell *matHeaderCellDef> School </th>
-              <td class="white" mat-cell *matCellDef="let education"> {{education.school}}    </td>
-            </ng-container>
-        
-            <!--  Major Column -->
-            <ng-container matColumnDef="Major">
-              <th class="white" mat-header-cell *matHeaderCellDef> Major </th>
-              <td class="white" mat-cell *matCellDef="let education"> {{education.major}}   </td>
-            </ng-container>
-        
-            <!-- Start/End Column -->
-            <ng-container matColumnDef="Start/End Month">
-              <th class="white" mat-header-cell *matHeaderCellDef> Start Month </th>
-              <td class="white" mat-cell *matCellDef="let education"> {{education.startMonth}},{{education.endMonth}}   </td>
-            </ng-container>
-        
-          </table>
-        
- 
+<div class="frame">
+  <h1 class="componenetHeader">Education</h1>
+  <div class="timeline">
+    <div *ngFor="let edu of educations; let i = index">
+      <div *ngIf="switch(i)" class="container left">
+        <div class="content">
+          <h1>{{edu.school}}</h1>
+          <h2 *ngIf="edu.endMonth">{{edu.startMonth}},{{edu.startYear}} - {{edu.endMonth}},{{edu.endYear}}</h2>
+          <h2 *ngIf="!edu.endMonth">{{edu.startMonth}},{{edu.startYear}} - Current</h2>
+        </div>
+      </div>
+      <div *ngIf="!switch(i)" class="container right">
+        <div class="content">
+          <h1>{{edu.school}}</h1>
+          <h2 *ngIf="edu.endMonth">{{edu.startMonth}},{{edu.startYear}} - {{edu.endMonth}},{{edu.endYear}}</h2>
+          <h2 *ngIf="!edu.endMonth">{{edu.startMonth}},{{edu.startYear}} - Current</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
