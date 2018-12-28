@@ -45,6 +45,9 @@ public class WorkHistory {
 	
 	@Column(name = "DESCRIPTION")
 	private String description;
+	
+	@Column(name = "COMPANY")
+	private String comapny;
 
 	@Override
 	public String toString() {
@@ -106,5 +109,13 @@ public class WorkHistory {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getComapny() {
+		return comapny;
+	}
+
+	public void setComapny(String comapny) {
+		this.comapny = comapny;
 	}
 }
