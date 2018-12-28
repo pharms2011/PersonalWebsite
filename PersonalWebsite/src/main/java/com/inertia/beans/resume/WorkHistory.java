@@ -47,7 +47,7 @@ public class WorkHistory {
 	private String description;
 	
 	@Column(name = "COMPANY")
-	private String comapny;
+	private String company;
 
 	@Override
 	public String toString() {
