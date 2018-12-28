@@ -111,11 +111,11 @@ public class WorkHistory {
 		this.description = description;
 	}
 
-	public String getComapny() {
+	public String getCompany() {
 		return company;
 	}
 
-	public void setComapny(String company) {
+	public void setCompany(String company) {
 		this.company = company;
 	}
 }
