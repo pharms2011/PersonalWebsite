@@ -115,7 +115,7 @@ public class WorkHistory {
 		return company;
 	}
 
-	public void setComapny(String comapny) {
-		this.company = comapny;
+	public void setComapny(String company) {
+		this.company = company;
 	}
 }
