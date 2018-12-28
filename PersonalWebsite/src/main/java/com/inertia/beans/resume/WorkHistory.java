@@ -112,10 +112,10 @@ public class WorkHistory {
 	}
 
 	public String getComapny() {
-		return comapny;
+		return company;
 	}
 
 	public void setComapny(String comapny) {
-		this.comapny = comapny;
+		this.company = comapny;
 	}
 }
