@@ -48,6 +48,7 @@ public class WorkHistory {
 	
 	@Column(name = "COMPANY")
 	private String company;
+	
 
 	@Override
 	public String toString() {

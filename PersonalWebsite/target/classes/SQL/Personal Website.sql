@@ -170,3 +170,15 @@ ALTER TABLE education ADD (
 ALTER TABLE education MODIFY (
     SCHOOL   VARCHAR2(60)
 );
+
+ALTER TABLE work_history ADD (
+    COMPANY  VARCHAR2(20)
+);
+
+ALTER TABLE work_history MODIFY (
+    DESCRIPTION   VARCHAR2(4000)
+);
+
+ALTER TABLE work_history MODIFY (
+    TITLE   VARCHAR2(60)
+);

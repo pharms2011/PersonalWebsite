@@ -35,6 +35,9 @@ public class Education {
 	@Column(name = "MAJOR")
 	private String major;
 	
+	@Column(name = "DEGREE")
+	private String degree;
+	
 	@Column(name = "START_MONTH")
 	private String startMonth;
 	
@@ -101,5 +104,21 @@ public class Education {
 
 	public void setSchool(String school) {
 		this.school = school;
+	}
+
+	public int getEducationId() {
+		return educationId;
+	}
+
+	public void setEducationId(int educationId) {
+		this.educationId = educationId;
+	}
+
+	public String getDegree() {
+		return degree;
+	}
+
+	public void setDegree(String degree) {
+		this.degree = degree;
 	}
 }
