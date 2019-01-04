@@ -1,0 +1,64 @@
+.skillsTabs{
+    color:white;
+    background-color: #1D2951;
+    width: 98%;
+    border-radius:2em;
+}
+.tabcontent{
+    color:white;
+    background-color: #06182E;
+}
+.skillsContainer{
+    display: -ms-flexbox; 
+    -webkit-flex-flow: row wrap; 
+    flex-flow: row wrap; 
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0%;
+    padding: 0%;
+    margin: 0%;
+    height: 20%;
+}
+.programmingLanguageButton{
+    padding: 0%;
+    border-radius:2em;
+    border:.2em solid #06182E;
+    margin: 1em;
+}
+.programmingLanguageButton{
+    padding: 0%;
+    border-radius:2em;
+    color: white;
+    background-color: #3A98C3;
+    margin: 1em;
+}
+.frameworksButton{
+    padding: 0%;
+    border-radius:2em;
+    color: black;
+    background-color: #7AE7C7;
+    margin: 1em;
+}
+.frontEndButton{
+    padding: 0%;
+    border-radius:2em;
+    color: black;
+    background-color: #E8DB52;
+    margin: 1em;
+}
+.backEndButton{
+    padding: 0%;
+    border-radius:2em;
+    color: white;
+    background-color: #D63230;
+    margin: 1em;
+}
+.devOpsButton{
+    padding: 0%;
+    border-radius:2em;
+    color: white;
+    background-color: #1D2951;
+    margin: 1em;
+}

@@ -1,0 +1,18 @@
+<h1><i class="fas fa-graduation-cap"></i> Education</h1>
+<table>
+    <tr>
+      <th>School</th>
+      <th>Degree</th>
+      <th>Major</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+    </tr>
+    <tr *ngFor='let education of educations'>
+      <td>{{education.school}}</td>
+      <td>{{education.degree}}</td>
+      <td>{{education.major}}</td>
+      <td>{{education.startMonth}}, {{education.startYear}}</td>
+      <td *ngIf='education.endYear'>{{education.endMonth}}, {{education.endYear}}</td>
+      <td *ngIf='!education.endYear'>Current</td>
+    </tr>
+  </table> 

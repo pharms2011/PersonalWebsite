@@ -1,37 +1,19 @@
+<br>
 <div class="frame">
-  <mat-card class="leftMenu">
-    <mat-card-header>
-      
-      <br>
-      <mat-card-title>
-        <h1>Preston Harms</h1>
-      </mat-card-title>
-      <mat-card-subtitle>
-        <h2>Software Developer</h2>
-      </mat-card-subtitle>
-      <br><br>  
-      <img class="profilePic" alt="Profile Pic" src="../../../assets/ProfilePic.jpg">
-    </mat-card-header>
-    <mat-card-content>
-      <div>
-        <app-resume-left-menu></app-resume-left-menu>
-      </div>
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="example-card GunMetal mainContent">
-    <mat-card-content>
-      <div class="frame">
-        <div class="history">
-          <app-work-history-component></app-work-history-component>
-        </div>
-        <div class="education">
-          <app-education-component></app-education-component>
-          <br>
-        </div>
-        <div class="skills">
-          <app-skill-component></app-skill-component>
-        </div>
-      </div>
-    </mat-card-content>
-  </mat-card>
+  <div class="leftMenu">
+    <app-resume-left-menu></app-resume-left-menu>
+  </div>
+  <div class="content">
+    <div class="workHistory">
+      <app-work-history></app-work-history>
+    </div>
+    <br><br><br>
+    <div class="skills">
+      <app-skills></app-skills>
+    </div>
+    <br><br><br>
+    <div class="education">
+      <app-education></app-education>
+    </div>
+  </div>
 </div>

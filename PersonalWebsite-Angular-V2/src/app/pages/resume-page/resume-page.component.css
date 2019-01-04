@@ -3,35 +3,8 @@ html,body {
     padding:0;
   }
 
-  mat-grid-tile{
-    align-content: center;
-    align-items: center;
-  }
-
-  mat-card-title{
-    width: 10em;
-    font-size: 2em;
-  }
-  mat-card-subtitle{
-    width: 10em;
-    font-size: 1.5em;
-  }
-
-  mat-card-content{
-    width:100%;
-    height: auto;
-  }
-
-  .container{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 2rem auto;
-    box-shadow: 0 0.25rem 2rem 0 rgba(0, 0, 0, 0.3);
-  }
-  
   h1{
-    margin: 0%;
+    margin: 2%;
     padding: 0%;
     width: 100%;
     height: 100%;
@@ -67,7 +40,7 @@ html,body {
   }
 
   .profilePic{
-      width: 30em;
+      width: 40em;
       height: 100%;
       margin: 2em;
       display: block;
@@ -83,13 +56,6 @@ html,body {
 
   }
 
-  .example-card {
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .bio{
     margin: 5em;
     font-size: .75em;
@@ -101,51 +67,57 @@ html,body {
   }
 
   .frame{
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
-    -ms-flex-direction: column;
+    display: -ms-flexbox; 
     -webkit-flex-flow: row wrap; 
     flex-flow: row wrap; 
-    display: -webkit-box;
-    align-content: center;
     display: flex;
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
+    border: 0%;
+    padding: 0%;
+    margin: 0%;
+  }
+
+.content{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: White;
+  border-radius:2em;
+  border-top:.5em solid #06182E;
   }
 
   .leftMenu{
     width: 20%;
-    height: 60em;
+    height: 100%;
     border: 0%;
-    margin: 0%;
+    margin-left: 1%;
     padding: 0%;
     left: 0;
-    -ms-flex-align: start;
-    align-self: flex-start;
     background-color: black;
     color: White;
+    border-radius:2em;
+    border-top:.5em solid #06182E;
   }
 
-  .history{
-    width: 70%;
+  .workHistory{
+    width: 100%;
+    height: 30%;
+    margin: 1em;
   }
 
   .education{
-    width: 30%;
+    margin: 1em;
+    width: 98%;
   }
 
   .skills{
     width: 100%;
     -ms-flex-align: end;
     align-self: flex-end;
-    right: 0;
-  }
-
-  .mainContent{
-    width: 80%;
-    height: 60em;
-    border: 0%;
-    padding: 0%;
-    margin: 0%;
+    margin: 1em;
   }

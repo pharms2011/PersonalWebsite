@@ -6,4 +6,5 @@ export class WorkHistory{
     startYear : String;
     endYear : String;
     description : String;
+    company : String;
 }

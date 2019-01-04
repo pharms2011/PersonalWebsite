@@ -1,0 +1,22 @@
+table{
+    width: 100%;
+    background-color: #1D2951;
+    border-radius:2em;
+    width: 100%; 
+    margin-bottom: 0; 
+    display: table;
+}
+th{
+    font-size: 1.5em;
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    width: 200px;
+    height: 10%;
+}
+td{
+    width: fit-content;
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}

@@ -1,0 +1,18 @@
+*{
+    text-align: center;
+}
+p{
+    border: 1em;
+    padding: 1em;
+}
+
+.profilePic{
+    width: 7em;
+    height: auto;
+    margin: 2em;
+    display: block;
+    border-radius: 50%;
+    align-self: right;
+    margin-left: auto;
+    margin-right: auto;   
+}

@@ -1,0 +1,42 @@
+<h1><i class="far fa-building"></i> Work History</h1>
+<div class="bar"></div>
+<div class="timeline">
+
+    <div class="entry" (click)="select(workHistorys[4].description)">
+        <h1>{{workHistorys[4].company}}</h1>
+        <h2>{{workHistorys[4].title}}</h2>
+        {{workHistorys[0].startMonth}},{{workHistorys[0].startYear}} -
+        {{workHistorys[0].endMonth}},{{workHistorys[0].endYear}}
+    </div>
+
+    <div class="entry" (click)="select(workHistorys[3].description)">
+        <h1>{{workHistorys[3].company}}</h1>
+        <h2>{{workHistorys[3].title}}</h2>
+        {{workHistorys[0].startMonth}},{{workHistorys[0].startYear}} -
+        {{workHistorys[0].endMonth}},{{workHistorys[0].endYear}}
+    </div>
+
+    <div class="entry" (click)="select(workHistorys[2].description)">
+        <h1>{{workHistorys[2].company}}</h1>
+        <h2>{{workHistorys[2].title}}</h2>
+        {{workHistorys[0].startMonth}},{{workHistorys[0].startYear}} -
+        {{workHistorys[0].endMonth}},{{workHistorys[0].endYear}}
+    </div>
+
+    <div class="entry" (click)="select(workHistorys[0].description)">
+        <h1>{{workHistorys[0].company}}</h1>
+        <h2>{{workHistorys[0].title}}</h2>
+        {{workHistorys[0].startMonth}},{{workHistorys[0].startYear}} -
+        {{workHistorys[0].endMonth}},{{workHistorys[0].endYear}}
+    </div>
+
+    <div class="entry" (click)="select(workHistorys[1].description)">
+        <h1>{{workHistorys[1].company}}</h1>
+        <h2>{{workHistorys[1].title}}</h2>
+        {{workHistorys[1].startMonth}},{{workHistorys[1].startYear}} -
+        Current
+    </div>
+
+</div>
+<br>
+<p class="description">{{selectedHistory}}</p>

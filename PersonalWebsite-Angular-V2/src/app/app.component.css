@@ -27,3 +27,8 @@ html,body{
      color: white;
      background-color: #7AE7C7;
  }
+ ngb-tabset,ngb-tab{
+     margin: 0%;
+     padding: 0%;
+     border: 0%;
+ }
